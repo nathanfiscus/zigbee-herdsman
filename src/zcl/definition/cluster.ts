@@ -5040,7 +5040,7 @@ const Cluster: {
         },
         commandsResponse: {},
     },
-    manuSpecificInovelliVZM31SN: {
+    manuSpecificInovelli: {
         ID: 64561,
         manufacturerCode: 0x122f,
         attributes: {
@@ -5066,6 +5066,10 @@ const Cluster: {
             powerType: {ID: 0x0015, type: DataType.boolean},
             switchType: {ID: 0x0016, type: DataType.uint8},
             higherOutputInNonNeutral: {ID: 0x0019, type: DataType.boolean},
+            nonNeutralAuxMediumGear: {ID: 0x001e, type: DataType.uint8},
+            nonNeutralAuxLowGear: {ID: 0x001f, type: DataType.uint8},
+            internalTemperature: {ID: 0x0020, type: DataType.uint8},
+            overheat: {ID: 0x0021, type: DataType.boolean},
             buttonDelay: {ID: 0x0032, type: DataType.uint8},
             deviceBindNumber: {ID: 0x0033, type: DataType.uint8},
             smartBulbMode: {ID: 0x0034, type: DataType.boolean},
@@ -5115,6 +5119,7 @@ const Cluster: {
             firmwareUpdateInProgressIndicator: {ID: 0x0104, type: DataType.boolean},
             relayClick: {ID: 0x105, type: DataType.boolean},
             doubleTapClearNotifications: {ID: 0x106, type: DataType.boolean},
+            fanLedLevelType: {ID: 0x107, type: DataType.uint8},
         },
         commands: {
             ledEffect: {
